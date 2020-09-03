@@ -9,10 +9,9 @@ searchUser.addEventListener('keypress', (event) => {
         if(userText !== '') {
             github.getUser(userText).then(data => {
                 if(data.profileData.message === 'Not Found') {
-                    profileClear();
-                    console.log(data.profileData.message);
+                    profileNotFound();
                 } else {
-                    console.log(data.profileData);
+                    //console.log(data.profileData);
                     profileDisplay(data.profileData);
                 }
             })
