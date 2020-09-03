@@ -13,6 +13,7 @@ searchUser.addEventListener('keypress', (event) => {
                     console.log(data.profileData.message);
                 } else {
                     console.log(data.profileData);
+                    profileDisplay(data.profileData);
                 }
             })
         }

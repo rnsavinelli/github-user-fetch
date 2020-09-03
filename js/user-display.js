@@ -1,8 +1,30 @@
-const profile = document.getElementById('profile');
+const profile = document.querySelector('#profile');
 
 function profileClear() {
-    profile.style.display = 'none';
+    profile.innerHTML = '';
 }
 
-function profileDisplay() {
+function profileDisplay(profileData) {
+    profileClear();
+
+    const div = document.createElement('div');
+    div.className = 'card card-body grid-container';
+    div.style.flexDirection='unset';
+    div.id = 'wrapper';
+    profile.append(div);
+
+    const wrapper = document.querySelector('#wrapper');
+
+    const leftColumn = document.createElement('div');
+    leftColumn.className = 'grid-item';
+    const profileIMG = document.createElement('img');
+    profileIMG.src = profileData.avatar_url;
+    leftColumn.append(profileIMG);
+    wrapper.append(leftColumn);
+
+    const rightColumn = document.createElement('div');
+    rightColumn.className = 'grid-item';
+    const profileUser = profileData.login;
+    rightColumn.append(document.createTextNode(`Username: ${profileUser}`));
+    wrapper.append(rightColumn);
 }
