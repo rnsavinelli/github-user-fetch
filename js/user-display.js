@@ -19,6 +19,9 @@ function profileDisplay(profileData) {
     leftColumn.className = 'grid-item';
     const profileIMG = document.createElement('img');
     profileIMG.src = profileData.avatar_url;
+    if(/Mobi/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent)) {
+        profireIMG.width = '50';
+    }
     leftColumn.append(profileIMG);
     wrapper.append(leftColumn);
 
