@@ -1,0 +1,11 @@
+#profile {
+    width: 80%;
+    margin: auto;
+}
+
+#profile img {
+	margin-right: 1em;
+    float: left;
+    width: 200px;
+	border-radius: 10%;
+}
