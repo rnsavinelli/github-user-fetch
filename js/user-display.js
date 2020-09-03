@@ -8,7 +8,7 @@ function profileDisplay(profileData) {
     profileClear();
 
     const div = document.createElement('div');
-    div.className = 'card card-body grid-container';
+    div.className = 'card card-body row';
     if(!/Mobi/i.test(navigator.userAgent) || !/Android/i.test(navigator.userAgent)) {
         div.style.flexDirection='unset';
     }
@@ -18,14 +18,14 @@ function profileDisplay(profileData) {
     const wrapper = document.querySelector('#wrapper');
 
     const leftColumn = document.createElement('div');
-    leftColumn.className = 'grid-item';
+    leftColumn.className = 'col-sm-3 d-flex justify-content-center';
     const profileIMG = document.createElement('img');
     profileIMG.src = profileData.avatar_url;
     leftColumn.append(profileIMG);
     wrapper.append(leftColumn);
 
     const rightColumn = document.createElement('div');
-    rightColumn.className = 'grid-item';
+    rightColumn.className = 'col-sm-9';
     const profileUser = profileData.login;
     rightColumn.append(document.createTextNode(`Username: ${profileUser}`));
     wrapper.append(rightColumn);

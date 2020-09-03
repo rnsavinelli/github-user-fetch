@@ -4,14 +4,7 @@
 }
 
 #profile img {
-	margin-right: 2em;
-    float: left;
     width: 200px;
+    margin-bottom: 2em;
 	border-radius: 10%;
-}
-
-@media screen and (max-width: 481px) {
-	margin-right: 0em;
-	margin-bottom: 2em;
-    float: none;
 }
