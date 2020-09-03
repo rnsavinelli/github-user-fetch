@@ -9,7 +9,9 @@ function profileDisplay(profileData) {
 
     const div = document.createElement('div');
     div.className = 'card card-body grid-container';
-    div.style.flexDirection='unset';
+    if(!/Mobi/i.test(navigator.userAgent) || !/Android/i.test(navigator.userAgent)) {
+        div.style.flexDirection='unset';
+    }
     div.id = 'wrapper';
     profile.append(div);
 
@@ -19,9 +21,6 @@ function profileDisplay(profileData) {
     leftColumn.className = 'grid-item';
     const profileIMG = document.createElement('img');
     profileIMG.src = profileData.avatar_url;
-    if(/Mobi/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent)) {
-        profireIMG.width = '50';
-    }
     leftColumn.append(profileIMG);
     wrapper.append(leftColumn);
 
