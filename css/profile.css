@@ -12,5 +12,6 @@
 
 @media screen and (max-width: 481px) {
 	margin-right: 0em;
+	margin-bottom: 2em;
     float: none;
 }
