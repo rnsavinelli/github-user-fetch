@@ -21,24 +21,20 @@ function profileDisplay(profileData) {
 
     const div = document.createElement('div');
     div.className = 'card card-body row';
-    if(!/Mobi/i.test(navigator.userAgent) || !/Android/i.test(navigator.userAgent)) {
-        div.style.flexDirection='unset';
-    }
     div.id = 'wrapper';
     profile.append(div);
 
     const wrapper = document.querySelector('#wrapper');
 
     const leftColumn = document.createElement('div');
-    leftColumn.className = 'col-sm-4 d-flex justify-content-center';
+    leftColumn.className = 'col-sm d-flex justify-content-center';
     const profileIMG = document.createElement('img');
     profileIMG.src = profileData.avatar_url;
-    //profileIMG.className = 'img-fluid';
     leftColumn.append(profileIMG);
     wrapper.append(leftColumn);
 
     const rightColumn = document.createElement('div');
-    rightColumn.className = 'col-sm-8 d-flex justify-content-center';
+    rightColumn.className = 'col-sm d-flex justify-content-center';
 
     var ul = document.createElement('ul');
     ul.className = 'list-group';
