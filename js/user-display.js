@@ -41,7 +41,7 @@ function profileDisplay(profileData) {
 
     var name = document.createElement('li');
     name.className = 'list-group-item';
-    const profileName = profileData.login;
+    const profileName = profileData.name;
     name.appendChild(document.createTextNode(`Name: ${profileName}`));
     ul.append(name);
 
@@ -66,7 +66,12 @@ function profileDisplay(profileData) {
     var blog = document.createElement('li');
     blog.className = 'list-group-item';
     const profileBlog = profileData.blog;
-    blog.appendChild(document.createTextNode(`Website: ${profileBlog}`));
+    blog.appendChild(document.createTextNode('Website: '));
+    a = document.createElement('a');
+    a.href = `${profileBlog}`;
+    a.target = '_blank';
+    a.innerHTML = `${profileBlog}`;
+    blog.appendChild(a);
     ul.append(blog);
 
     var company = document.createElement('li');
