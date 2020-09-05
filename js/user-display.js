@@ -20,7 +20,7 @@ function profileDisplay(profileData) {
     profileClear();
 
     const div = document.createElement('div');
-    div.className = 'card card-body row';
+    div.className = 'card card-body row mb-4';
     div.id = 'wrapper';
     profile.append(div);
 
