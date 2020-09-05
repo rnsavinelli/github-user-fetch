@@ -9,3 +9,10 @@
     margin-bottom: 2em;
 	border-radius: 10%;
 }
+
+.logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: top;
+}

@@ -9,23 +9,30 @@
     <title>GitHub User Fetch</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-primary mb-4">
+    <nav class="navbar navbar-dark bg-primary mb-5">
         <div class="container">
-            <a class="navbar-brand" href="#">GitHub User Fetch</a>
+            <a class="navbar-brand" href="#"><img src="img/48px-System-index-search.svg.png" alt="[SEARCH ICON]" class="logo"> GitHub User Fetch</a>
         </div>
     </nav>
     <div class="container searchContainer">
         <div class="search card card-body">
             <h1>Fetch user data</h1>
             <p class="lead">Enter a username to get its profile information.</p>
-            <input type="text" id="searchUser" class="form-control" placeholder="GitHub username">
+            <input type="text" id="searchUser" class="form-control" placeholder="GitHub username...">
+            <div class="container mt-4">
+				<div class="text-right">
+					<button type="button" id="buttonSearch" class="btn btn-primary">Search</button>
+					<button type="button" id="buttonClear" class="btn btn-secondary" data-dismiss="modal">Clear</button>
+				</div>
+			</div>
         </div>
         <br>
         <!-- placeholder for user-fetch.js -->
         <div id="profile"></div>
     </div>
 
-<footer class="mt-4 p-3 text-center">
+<footer class="mt-2 p-3 text-center">
+	<hr class="my-2">
     GitHub User Fetch
     <br>
     A javascript web application by
