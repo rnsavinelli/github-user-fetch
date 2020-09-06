@@ -10,7 +10,7 @@ Give GUF a try: https://rnsavinelli.github.io/guf/
 
 [`user-diplay.js`](js/user-display.js): functions `profileClear`, `profileNotFound`, and `profileDisplay` are defined in this file.
 
-[`guf.js`](js/guf.js): calls the `getUser` method, commands the buttons behaviours, and calls the functions defined on user-display;
+[`guf.js`](js/guf.js): calls the `getUser` method, commands the buttons behaviours, and calls the functions defined on `user-display.js`.
 
 ## REST API
 
