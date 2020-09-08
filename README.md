@@ -1,6 +1,6 @@
 # GUF - GitHub User Fetch
 
-Search GitHub users by username using GUF, a javascript web application implementing GitHub's REST API.
+Search GitHub users by username using GUF, a JavaScript web application implementing GitHub's REST API.
 
 Give GUF a try: https://rnsavinelli.github.io/guf/
 
