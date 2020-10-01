@@ -2,7 +2,7 @@
 
 Search GitHub users by username using GUF, a JavaScript web application implementing GitHub's REST API.
 
-Give GUF a try: https://rnsavinelli.github.io/guf/
+Give GUF a try: https://rnsavinelli.github.io/github-user-fetch/
 
 ## About the scripts
 
